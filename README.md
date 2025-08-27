@@ -180,49 +180,6 @@ This is a comprehensive user authentication system built with Node.js, Express, 
 
 Please feel free to contribute to this project by submitting pull requests.
 
-## Folder Structure
-
-backend/
-│── src/
-│ ├── config/
-│ │ ├── db.js # Sequelize + MySQL connection
-│ │ ├── redis.js # Redis setup
-│ │ ├── passport.js # Google OAuth2 strategy
-│ │ └── env.js # Environment variables
-│ │
-│ ├── models/
-│ │ ├── index.js # Sequelize initialization
-│ │ ├── User.js # User model
-│ │ └── Role.js # Role model (Admin/User)
-│ │
-│ ├── middleware/
-│ │ ├── auth.js # JWT authentication
-│ │ ├── roleCheck.js # Role-based access
-│ │ └── validator.js # Express-validator rules
-│ │
-│ ├── controllers/
-│ │ ├── authController.js # Register, Login, Google Login, Password reset
-│ │ ├── userController.js # Profile CRUD
-│ │ └── adminController.js # User list (pagination, search)
-│ │
-│ ├── routes/
-│ │ ├── authRoutes.js
-│ │ ├── userRoutes.js
-│ │ └── adminRoutes.js
-│ │
-│ ├── utils/
-│ │ ├── mailer.js # Nodemailer config
-│ │ ├── token.js # JWT utils
-│ │ └── fileUpload.js # Multer config
-│ │
-│ ├── app.js # Express app setup
-│ └── server.js # Server entry point
-│
-├── tests/ # Unit & integration tests
-├── .env
-├── package.json
-└── README.md
-
 ## License
 
 [MIT](LICENSE)
